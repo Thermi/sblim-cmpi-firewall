@@ -168,6 +168,9 @@ fi
 
 ###############################################################################
 %changelog
+* Wed Jun 17 2009 Jeremy Bongio <jbongio@us.ibm.com> 0.5.6-1
+    o Initial release
+
 * Tue Oct 21 2008 Riyashmon Haneefa <riyashh1@in.ibm.com> 0.5.2-CVS
     o Updated
 
