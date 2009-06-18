@@ -1,0 +1,175 @@
+#
+# sblim-cmpi-firewall.spec.in
+#
+# Package spec for cmpi-firewall
+#
+
+%define cmpi_provider_dir %{_libdir}/cmpi
+
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
+
+Summary: SBLIM WBEM-SMT FIREWALL 
+Name: @PACKAGE_TARNAME@
+Version: @PACKAGE_VERSION@
+Release: CVS
+Group: Systems Management/Base
+URL: http://www.sblim.org
+License: CPL
+Requires: sblim-tools-libra
+Requires: sblim-cmpi-base
+Requires: sblim-cmpi-network
+Requires: iptables
+BuildRequires: sblim-tools-libra-devel
+BuildRequires: sblim-cmpi-base-devel
+BuildRequires: sblim-cmpi-network-devel
+
+Provides: sblim-cmpi-firewall
+
+Source0: http://prdownloads.sourceforge.net/sblim/%{name}-%{version}.tar.bz2 
+
+%Description
+The cmpi-firewall package provides access to the FIREWALL configuration data 
+via CIMOM technology/infrastructure. 
+It contains the FIREWALL CIM Model, CMPI Provider with the FIREWALL task specific 
+Resource Access.
+A web based client application is available on SourceForge. Please refer to
+https://sourceforge.net/project/showfiles.php?group_id=128809&package_id=214076
+to get the WBEM-SMT Client Application.
+
+###############################################################################
+%Package devel
+Summary: SBLIM WBEM-SMT FIREWALL - Header Development Files
+Group: Systems Management/Base
+Requires: %{name} = %{version}-%{release}
+
+%Description devel
+SBLIM WBEM-SMT FIREWALL Development Package contains header files and
+link libraries for dependent provider packages
+
+###############################################################################
+%Package test
+Summary: SBLIM WBEM-SMT FIREWALL - Testcase Files
+Group: Systems Management/Base
+Requires: %{name} = %{version}-%{release}
+
+%Description test
+SBLIM WBEM-SMT FIREWALL Provider Testcase Files for the SBLIM Testsuite
+
+###############################################################################
+%prep
+
+%setup -n %{name}-%{version}
+export PATCH_GET=0
+#%patch0 -p0
+
+
+###############################################################################
+%build
+%configure \
+   TESTSUITEDIR=%{_datadir}/sblim-testsuite \
+
+   CIMSERVER=pegasus \
+   PROVIDERDIR=%{_libdir}/cmpi/ \
+make
+
+
+###############################################################################
+%clean
+if [ "x${RPM_BUILD_ROOT}" != "x" ] ; then
+   rm -rf ${RPM_BUILD_ROOT}
+fi
+
+
+###############################################################################
+%install
+[ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
+
+make DESTDIR=$RPM_BUILD_ROOT install
+
+# remove unused libtool files
+rm -f $RPM_BUILD_ROOT/%{_libdir}/*a
+rm -f $RPM_BUILD_ROOT/%{_libdir}/cmpi/*a
+
+
+###############################################################################
+%pre
+# Conditional definition of schema and registration files
+%define SCHEMA %{_datadir}/%{name}/Linux_FirewallService.mof %{_datadir}/%{name}/Linux_FirewallServiceConfiguration.mof %{_datadir}/%{name}/Linux_FirewallServiceConfigurationForService.mof %{_datadir}/%{name}/Linux_FirewallRegisteredProfile.mof %{_datadir}/%{name}/Linux_FirewallElementConformsToProfile.mof %{_datadir}/%{name}/Linux_FirewallInterface.mof %{_datadir}/%{name}/Linux_FirewallManagedPorts.mof %{_datadir}/%{name}/Linux_FirewallTrustedServices.mof %{_datadir}/%{name}/Linux_FirewallManagedPortsForInterface.mof %{_datadir}/%{name}/Linux_FirewallTrustedServicesForInterface.mof 
+%define REGISTRATION %{_datadir}/%{name}/Linux_FirewallService.registration %{_datadir}/%{name}/Linux_FirewallServiceConfiguration.registration %{_datadir}/%{name}/Linux_FirewallServiceConfigurationForService.registration %{_datadir}/%{name}/Linux_FirewallInterface.registration %{_datadir}/%{name}/Linux_FirewallTrustedServices.registration %{_datadir}/%{name}/Linux_FirewallManagedPorts.registration %{_datadir}/%{name}/Linux_FirewallManagedPortsForInterface.registration %{_datadir}/%{name}/Linux_FirewallTrustedServicesForInterface.registration
+%define INTEROP_SCHEMAS %{_datadir}/%{name}/Linux_FirewallService.mof %{_datadir}/%{name}/Linux_FirewallRegisteredProfile.mof %{_datadir}/%{name}/Linux_FirewallElementConformsToProfile.mof 
+%define INTEROP_REGISTRATIONS %{_datadir}/%{name}/Linux_FirewallRegisteredProfile.registration %{_datadir}/%{name}/Linux_FirewallElementConformsToProfile.registration
+
+# If upgrading, deregister old version
+if [ $1 -gt 1 ]
+then
+  %{_datadir}/%{name}/provider-register.sh -d %{?tog_pegasus:-t pegasus} \
+	-r %{REGISTRATION} -m %{SCHEMA} > /dev/null
+	
+  %{_datadir}/%{name}/provider-register.sh -d %{?tog_pegasus:-t pegasus} \
+	-n "root/PG_InterOp" -r %{INTEROP_REGISTRATIONS} -m %{INTEROP_SCHEMAS} > /dev/null
+	
+fi
+
+###############################################################################
+%post
+# Register Schema and Provider - this is highly provider specific
+%{_datadir}/%{name}/provider-register.sh %{?tog_pegasus:-t pegasus} \
+	-v -r %{REGISTRATION} -m %{SCHEMA} > /dev/null
+	
+%{_datadir}/%{name}/provider-register.sh %{?tog_pegasus:-t pegasus} \
+	 -v -n "root/PG_InterOp" -r %{INTEROP_REGISTRATIONS} -m %{INTEROP_SCHEMAS} > /dev/null
+/sbin/ldconfig
+
+###############################################################################
+%preun
+# Deregister only if not upgrading 
+if [ $1 -eq 0 ]
+then
+  %{_datadir}/%{name}/provider-register.sh -d %{?tog_pegasus:-t pegasus} \
+	-r %{REGISTRATION} -m %{SCHEMA} > /dev/null
+  
+  %{_datadir}/%{name}/provider-register.sh -d %{?tog_pegasus:-t pegasus} \
+	-n "root/PG_InterOp" -r %{INTEROP_REGISTRATIONS} -m %{INTEROP_SCHEMAS} > /dev/null
+fi
+
+###############################################################################
+%postun 
+# Run ldconfig only if not upgrading
+if [ $1 -eq 0 ]
+then
+  /sbin/ldconfig
+fi
+
+###############################################################################
+%files
+%defattr(-,root,root,0644) 
+%doc %{_datadir}/doc/%{name}-%{version}
+%exclude %{_datadir}/doc/%{name}-%{version}/*.test
+%doc %{_mandir}/man5/smt_fw_ra_support.conf.5.gz
+%config(noreplace) %{_sysconfdir}/smt_fw*.conf
+%defattr(-,root,root,0755)
+%{_datadir}/%{name}
+%{_datadir}/locale/en_US/LC_MESSAGES/sblim-cmpi-firewall.*
+%{_libdir}/libRaToolsFirewall.so.*
+%{cmpi_provider_dir}/libcmpiLinux_Firewall*.so
+
+%files devel
+%defattr(-,root,root) 
+%{_libdir}/libRaToolsFirewall.so
+
+%files test
+%defattr(-,root,root,0755)
+%{_datadir}/sblim-testsuite/test-cmpi-firewall.sh
+%doc %{_datadir}/doc/%{name}-%{version}/*.test
+%defattr(-,root,root,0644)
+#%{_datadir}/sblim-testsuite/iptables.conf
+%{_datadir}/sblim-testsuite/cim/Linux_Firewall*
+%{_datadir}/sblim-testsuite/system/linux/Linux_Firewall*
+
+###############################################################################
+%changelog
+* Tue Oct 21 2008 Riyashmon Haneefa <riyashh1@in.ibm.com> 0.5.2-CVS
+    o Updated
+
+* Thu Jul 17 2008 Ashoka Rao <ashoka.rao@in.ibm.com> 0.5.2-CVS
+    o initial support

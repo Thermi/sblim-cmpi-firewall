@@ -1,0 +1,9 @@
+********************************************************************************
+association : Linux_FirewallTrustedServicesForInterface 
+
+--------------------------------------------------------------------------------
+Linux_FirewallTrustedServices : -target Linux_FirewallInterface -gt -1
+Linux_FirewallInterface : -target Linux_FirewallTrustedServices -gt -1
+
+--------------------------------------------------------------------------------
+

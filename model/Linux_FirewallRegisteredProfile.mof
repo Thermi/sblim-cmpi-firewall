@@ -1,0 +1,22 @@
+//
+// Linux_FirewallRegisteredProfile.mof
+//
+// © Copyright IBM Corp. 2008
+//
+// THIS FILE IS PROVIDED UNDER THE TERMS OF THE ECLIPSE PUBLIC LICENSE
+// ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THIS FILE
+// CONSTITUTES RECIPIENTS ACCEPTANCE OF THE AGREEMENT.
+// 
+// You can obtain a current copy of the Eclipse Public License from
+// http://www.opensource.org/licenses/eclipse-1.0.php
+// 
+// Author:  Ashoka Rao S <ashoka.rao@in.ibm.com>
+// 
+// 
+
+[Description ("A class which is used during SLP discovery to identify"
+              "that the Firewall task is available")]
+
+class Linux_FirewallRegisteredProfile : CIM_RegisteredProfile {
+
+};

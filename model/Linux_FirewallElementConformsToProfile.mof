@@ -1,0 +1,26 @@
+//
+// Linux_FirewallElementConformsToProfile.mof
+//
+// © Copyright IBM Corp. 2008
+//
+// THIS FILE IS PROVIDED UNDER THE TERMS OF THE ECLIPSE PUBLIC LICENSE
+// ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THIS FILE
+// CONSTITUTES RECIPIENTS ACCEPTANCE OF THE AGREEMENT.
+// 
+// You can obtain a current copy of the Eclipse Public License from
+// http://www.opensource.org/licenses/eclipse-1.0.php
+// 
+// Author:  Ashoka Rao S <ashoka.rao@in.ibm.com>
+// 
+// 
+
+[Description("Association between the Firewall Registered Profile and the Firewall Service"), Association]
+
+class Linux_FirewallElementConformsToProfile : CIM_ElementConformsToProfile {
+    
+  	[Override ("ConformantStandard")]  	
+  	Linux_FirewallRegisteredProfile REF ConformantStandard;
+
+    [Override("ManagedElement")]
+ 	Linux_FirewallService REF ManagedElement;
+};

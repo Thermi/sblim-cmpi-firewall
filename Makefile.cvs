@@ -1,0 +1,34 @@
+# ==================================================================
+# © Copyright IBM Corp. 2007
+#
+# THIS FILE IS PROVIDED UNDER THE TERMS OF THE ECLIPSE PUBLIC LICENSE
+# ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THIS FILE
+# CONSTITUTES RECIPIENTS ACCEPTANCE OF THE AGREEMENT.
+#
+# You can obtain a current copy of the Eclipse Public License from
+# http://www.opensource.org/licenses/eclipse-1.0.php
+#
+# Author:       Ashoka Rao S  <ashoka.rao@in.ibm.com>
+#				Riyashmon Haneefa <riyashh1@in.ibm.com>
+#
+# ==================================================================
+#
+# Usage:
+#
+#     make -f Makefile.cvs
+#
+
+SHELL = /bin/sh
+
+make:
+	libtoolize -c --automake --force
+	autopoint --force
+	aclocal --force -I m4
+	autoheader --force
+	automake --add-missing --force-missing
+	autoconf --force
+	@echo ""
+	@echo "You may now run ./configure"
+	@echo ""
+
+

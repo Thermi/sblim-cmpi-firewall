@@ -1,0 +1,28 @@
+*******************************************************************************************************
+class : Linux_FirewallTrustedServices
+objectPath : Linux_FirewallTrustedServices.InstanceID="IPP"
+createInst : InstanceID=""
+modifyInst : InstanceID="",ServiceName="PPP" 
+classKey : InstanceID
+
+-------------------------------------------------------------------------------------------------------
+Instance									      enumInstanceNames
+
+-------------------------------------------------------------------------------------------------------
+Instance										  enumInstances
+
+-------------------------------------------------------------------------------------------------------
+Instance                                                                 			    get
+
+-------------------------------------------------------------------------------------------------------
+Instance                                                                 			 create
+Expected Exception : NOT_SUPPORTED
+
+-------------------------------------------------------------------------------------------------------
+Instance                                                                    			    set
+Expected Exception : NOT_SUPPORTED
+
+-------------------------------------------------------------------------------------------------------
+Instance                                                                		         delete
+Expected Exception : NOT_SUPPORTED
+

@@ -1,0 +1,34 @@
+//
+// Linux_FirewallManagedPortsForInterface.mof
+//
+// © Copyright IBM Corp. 2008
+//
+// THIS FILE IS PROVIDED UNDER THE TERMS OF THE ECLIPSE PUBLIC LICENSE
+// ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THIS FILE
+// CONSTITUTES RECIPIENTS ACCEPTANCE OF THE AGREEMENT.
+// 
+// You can obtain a current copy of the Eclipse Public License from
+// http://www.opensource.org/licenses/eclipse-1.0.php
+// 
+// Author:  Ashoka Rao S <ashoka.rao@in.ibm.com>
+// 
+// 
+
+
+[Description("Any Interface can have more than one Unreserved Port enabled on it.  This association is represented by this mof."),
+Association,
+Aggregation]
+
+class Linux_FirewallManagedPortsForInterface : CIM_Component {
+
+        [Key, Override("GroupComponent"),
+        Max (1),
+        Min (1),
+        Aggregate]
+        Linux_FirewallInterface REF GroupComponent;
+
+        [Key, Override("PartComponent")]
+        Linux_FirewallManagedPorts REF PartComponent;
+
+
+        };

@@ -1,0 +1,52 @@
+//
+// Linux_FirewallServiceConfiguration.mof
+//
+// © Copyright IBM Corp. 2008
+//
+// THIS FILE IS PROVIDED UNDER THE TERMS OF THE ECLIPSE PUBLIC LICENSE
+// ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THIS FILE
+// CONSTITUTES RECIPIENTS ACCEPTANCE OF THE AGREEMENT.
+// 
+// You can obtain a current copy of the Eclipse Public License from
+// http://www.opensource.org/licenses/eclipse-1.0.php
+// 
+// Author:  Ashoka Rao S <ashoka.rao@in.ibm.com>
+// 
+// 
+
+
+[Description("Entity which represents a configuration file for the service.")
+]
+
+class Linux_FirewallServiceConfiguration : CIM_Configuration {
+
+	[Write ,
+	 Description("Name of the Configuration file with absolute path.")]
+	string configurationFile;
+
+	[Description("Load additional iptables modules (nat helpers) Default: -none- Space separated list of nat helpers \(e.g. 'ip_nat_ftp ip_nat_irc'\), which are loaded after the firewall rules are applied. Options for the helpers are stored in \/etc\/modprobe.conf.")] 
+	//string IPTABLES_MODULES[]; 
+	string IPTABLES_MODULES; 
+
+	[Description("Unload modules on restart and stop Value: yes|no,  default: yes This option has to be 'yes' to get to a sane state for a firewall restart or stop. Only set to 'no' if there are problems unloading netfilter modules.")] 
+	boolean	IPTABLES_MODULES_UNLOAD; 
+
+	[Description("Save current firewall rules on stop. Value: yes|no,  default: no Saves all firewall rules to \/etc\/sysconfig\/iptables if firewall gets stopped \(e.g. on system shutdown\).")] 
+	boolean	IPTABLES_SAVE_ON_STOP; 
+
+	[Description("Save current firewall rules on restart. Value: yes|no,default: no Saves all firewall rules to \/etc\/sysconfig\/iptables if firewall gets restarted.")] 
+	boolean	IPTABLES_SAVE_ON_RESTART; 
+
+	[Description("Save (and restore) rule and chain counter. Value: yes|no,  default: no Save counters for rules and chains to \/etc\/sysconfig\/iptables if 'service iptables save' is called or on stop or restart if SAVE_ON_STOP or SAVE_ON_RESTART is enabled.")] 
+	boolean	IPTABLES_SAVE_COUNTER; 
+
+	[Description("Numeric status output Value: yes|no,  default: yes Print IP addresses and port numbers in numeric format in the status output.")] 
+	boolean	IPTABLES_STATUS_NUMERIC; 
+
+	[Description("Verbose status output Value: yes|no,  default: yes Print info about the number of packets and bytes plus the \"input-\" and \"outputdevice\" in the status output.")] 
+	boolean	IPTABLES_STATUS_VERBOSE; 
+
+	[Description("Status output with numbered lines Value: yes|no,  default: yes Print a counter/number for every rule in the status output.")] 
+	boolean	IPTABLES_STATUS_LINENUMBERS; 
+	 
+};		

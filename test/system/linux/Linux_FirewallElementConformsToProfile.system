@@ -1,0 +1,8 @@
+********************************************************************************
+association : Linux_FirewallElementConformsToProfile
+
+--------------------------------------------------------------------------------
+Linux_FirewallRegisteredProfile : -target Linux_FirewallService -lt 2
+Linux_FirewallService : -target Linux_FirewallRegisteredProfile -eq 1
+
+--------------------------------------------------------------------------------

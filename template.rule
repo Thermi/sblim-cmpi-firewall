@@ -1,0 +1,77 @@
+#
+# template.rule
+#
+# (C) Copyright IBM Corp. 2008
+#
+# THIS FILE IS PROVIDED UNDER THE TERMS OF THE ECLIPSE PUBLIC LICENSE
+# ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THIS FILE
+# CONSTITUTES RECIPIENTS ACCEPTANCE OF THE AGREEMENT.
+#
+# You can obtain a current copy of the Eclipse Public License from
+# http://www.opensource.org/licenses/eclipse-1.0.php
+#
+# Author:     Riyashmon Haneefa <riayshh1@in.ibm.com>
+#             Ashoka S Rao      <ashoka.rao@in.ibm.com>
+#
+#This is how the template file would look like
+
+service-name IPP {
+    -p udp -m udp --dport 631
+    -p tcp -m tcp --dport 631
+}
+
+service-name HTTPS {
+    -p tcp -m state --state NEW -m tcp --dport 443
+}
+
+service-name NFS {
+    -p tcp -m state --state NEW -m tcp --dport 2049
+}
+
+service-name SMB {
+    -p udp -m state --state NEW -m udp --dport 137
+    -p udp -m state --state NEW -m udp --dport 138
+    -p tcp -m state --state NEW -m tcp --dport 139
+    -p tcp -m state --state NEW -m tcp --dport 445
+}
+
+service-name SMTP {
+    -p tcp -m state --state NEW -m tcp --dport 25
+}
+
+service-name SSH {
+    -p tcp -m state --state NEW -m tcp --dport 22
+}
+
+service-name TELNET {
+    -p tcp -m state --state NEW -m tcp --dport 23
+}
+
+service-name HTTP {
+    -p tcp -m state --state NEW -m tcp --dport 80
+}
+
+service-name NTP {
+    -p UDP -s 0/0 --destination-port 123
+}
+
+service-name DNS {
+    -p UDP -s 0/0 --destination-port 53
+}
+
+service-name DHCP {
+    -p UDP -s 0/0 --source-port 68 --destination-port 67
+}
+
+service-name FTP {
+    -p TCP -s 0/0 --destination-port 21
+}
+
+service-name POP3 {
+    -p TCP -s 0/0 --destination-port 110
+}
+
+service-name IMAP4 {
+    -p TCP -s 0/0 --destination-port 143
+}
+

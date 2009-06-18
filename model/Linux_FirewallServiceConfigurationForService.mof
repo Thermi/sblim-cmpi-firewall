@@ -1,0 +1,33 @@
+//
+// Linux_FirewallServiceConfigurationForService.mof
+//
+// © Copyright IBM Corp. 2008
+//
+// THIS FILE IS PROVIDED UNDER THE TERMS OF THE ECLIPSE PUBLIC LICENSE
+// ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THIS FILE
+// CONSTITUTES RECIPIENTS ACCEPTANCE OF THE AGREEMENT.
+// 
+// You can obtain a current copy of the Eclipse Public License from
+// http://www.opensource.org/licenses/eclipse-1.0.php
+// 
+// Author:  Ashoka Rao S <ashoka.rao@in.ibm.com>
+// 
+// 
+
+
+[Description(" An Association between the Service and the Configuration data specified in the ServiceConfiguration class"),
+Association]
+
+class Linux_FirewallServiceConfigurationForService : CIM_ElementConfiguration {
+
+	[Key, Override("Element"),Max (1), 
+	Min (1)]
+	Linux_FirewallService REF Element;
+	
+	[Key, Override("Configuration"),Max (1), 
+	Min (1)]
+	Linux_FirewallServiceConfiguration REF Configuration;
+	
+	
+	};
+		

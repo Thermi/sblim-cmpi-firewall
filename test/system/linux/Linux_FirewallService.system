@@ -1,0 +1,11 @@
+********************************************************************************
+class : Linux_FirewallService
+
+--------------------------------------------------------------------------------
+Linux_FirewallService : -eq 1
+
+--------------------------------------------------------------------------------
+CreationClassName : -eq Linux_FirewallService
+Name : -eq rhino1
+SystemCreationClassName : -eq Linux_FirewallService
+SystemName : -eq rhino1

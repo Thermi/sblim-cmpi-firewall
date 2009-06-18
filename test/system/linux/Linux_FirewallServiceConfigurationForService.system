@@ -1,0 +1,9 @@
+********************************************************************************
+association : Linux_FirewallServiceConfigurationForService 
+
+--------------------------------------------------------------------------------
+Linux_FirewallServiceConfiguration : -target Linux_FirewallService -eq 1
+Linux_FirewallService : -target Linux_FirewallServiceConfiguration -eq 1
+
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,798 @@
+# English translations for SBLIM CMPI Provider for WBEM-SMT Firewall task package.
+# Copyright (C) 2008 IBM Corp.
+# This file is distributed under the same license as the SBLIM CMPI Provider for WBEM-SMT Firewall task package.
+# Riyashmon Haneefa <riyashh1@in.ibm.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SBLIM CMPI Provider for WBEM-SMT Firewall task 0.5.2\n"
+"Report-Msgid-Bugs-To: sblim-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2008-10-31 17:07+0530\n"
+"PO-Revision-Date: 2008-10-30 17:59+0530\n"
+"Last-Translator: Riyashmon Haneefa <riyashh1@in.ibm.com>\n"
+"Language-Team: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: include/sblim-fw.h:67
+msgid "TRY OUT"
+msgstr "TRY OUT"
+
+#: resource-access/fw-provider-support.c:61
+#: resource-access/fw-provider-support.c:180
+msgid "'firewallconf' not configured in smt_fw_ra_support.conf"
+msgstr "'firewallconf' not configured in smt_fw_ra_support.conf"
+
+#: resource-access/fw-provider-support.c:76
+#: resource-access/fw-provider-support.c:132
+#: resource-access/fw-provider-support.c:138
+msgid "Insufficient Memory"
+msgstr "Insufficient Memory"
+
+#: resource-access/fw-provider-support.c:286
+msgid "'templaterules' not configured in smt_fw_ra_support.conf"
+msgstr "'templaterules' not configured in smt_fw_ra_support.conf"
+
+#: resource-access/fw-provider-support.c:422
+msgid "The specific port already exists"
+msgstr "The specific port already exists"
+
+#: resource-access/fw-provider-support.c:601
+#: resource-access/fw-provider-support.c:813
+msgid "The association already exists"
+msgstr "The association already exists"
+
+#: resource-access/fw-provider-support.c:611
+#: resource-access/fw-provider-support.c:823
+msgid "The association has been created"
+msgstr "The association has been created"
+
+#: resource-access/fw-provider-support.c:687
+#: resource-access/fw-provider-support.c:889
+msgid "The association has been deleted"
+msgstr "The association has been deleted"
+
+#: resource-access/fw-provider-support.c:694
+#: resource-access/fw-provider-support.c:896
+msgid "The association does not exists"
+msgstr "The association does not exists"
+
+#: resource-access/fw-provider-support.c:944
+#, fuzzy
+msgid "configuration file does not exists"
+msgstr "The association does not exists"
+
+#: resource-access/fw-provider-support.c:978
+msgid "The interface already exists"
+msgstr "The interface already exists"
+
+#: resource-access/fw.fwconf.parser.y:186
+msgid "Invalid path to the configuration file"
+msgstr "Invalid path to the configuration file"
+
+#: resource-access/fw.rule.parser.y:186
+msgid "Invalid path to the template rule file"
+msgstr "Invalid path to the template rule file"
+
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:57
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:498
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:577
+#: provider/Linux_FirewallElementConformsToProfile/Linux_ElementConformsToProfile_Resource.c:100
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:161
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:119
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:115
+#: provider/Linux_FirewallService/Linux_FirewallService.c:104
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:123
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:61
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:502
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:581
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService_Resource.c:100
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:119
+msgid "Failed to get CMPIObjectPath from CMPIInstance"
+msgstr "Failed to get CMPIObjectPath from CMPIInstance"
+
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:118
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:124
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:122
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:128
+msgid "Failed to get objectpath from instance"
+msgstr "Failed to get objectpath from instance"
+
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:130
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:404
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:278
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:276
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:445
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:134
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:277
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:278
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:448
+msgid "Target instance not found"
+msgstr "Target instance not found"
+
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:156
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:175
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:193
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:214
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:79
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:210
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:340
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:485
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:590
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:612
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:80
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:169
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:258
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:349
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:382
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:468
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:351
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:251
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:270
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:288
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:309
+#: provider/Linux_FirewallService/Linux_FirewallService.c:71
+#: provider/Linux_FirewallService/Linux_FirewallService.c:138
+#: provider/Linux_FirewallService/Linux_FirewallService.c:197
+#: provider/Linux_FirewallService/Linux_FirewallService.c:260
+#: provider/Linux_FirewallService/Linux_FirewallService.c:281
+#: provider/Linux_FirewallService/Linux_FirewallService.c:302
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:80
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:165
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:239
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:308
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:346
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:368
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:160
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:179
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:197
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:218
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:80
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:169
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:258
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:349
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:372
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:394
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:353
+msgid "This function is not supported"
+msgstr "This function is not supported"
+
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:322
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:393
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:479
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:558
+#: provider/Linux_FirewallElementConformsToProfile/Linux_ElementConformsToProfile_Resource.c:43
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:536
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface_Resource.c:140
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:86
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:153
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:220
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:254
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:510
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:326
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:397
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:483
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:562
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService_Resource.c:43
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices_Resource.c:83
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:242
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:485
+msgid "Dynamic Memory Allocation Failed"
+msgstr "Dynamic Memory Allocation Failed"
+
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:408
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:424
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:412
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:428
+msgid "Associator call: Failed to get Instance"
+msgstr "Associator call: Failed to get Instance"
+
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:485
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:564
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:489
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:568
+msgid "failed to get resource"
+msgstr "failed to get resource"
+
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:492
+#: provider/Linux_FirewallElementConformsToProfile/Linux_FirewallElementConformsToProfile.c:571
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:496
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService.c:575
+msgid "failed to get the reference"
+msgstr "failed to get the reference"
+
+#: provider/Linux_FirewallElementConformsToProfile/Linux_ElementConformsToProfile_Resource.c:50
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService_Resource.c:50
+msgid "Failed to load profile resource"
+msgstr "Failed to load profile resource"
+
+#: provider/Linux_FirewallElementConformsToProfile/Linux_ElementConformsToProfile_Resource.c:75
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:140
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:270
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:411
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:98
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:187
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:285
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:92
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:99
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:182
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:283
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:99
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:148
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:210
+#: provider/Linux_FirewallService/Linux_FirewallService.c:82
+#: provider/Linux_FirewallService/Linux_FirewallService.c:145
+#: provider/Linux_FirewallService/Linux_FirewallService.c:211
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:95
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:180
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:254
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService_Resource.c:75
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:98
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:187
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:284
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:94
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:101
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:184
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:285
+msgid "Creation of CMPIObjectPath failed"
+msgstr "Creation of CMPIObjectPath failed"
+
+#: provider/Linux_FirewallElementConformsToProfile/Linux_ElementConformsToProfile_Resource.c:82
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:147
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:277
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:418
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:105
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:194
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:292
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:106
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:155
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:217
+#: provider/Linux_FirewallService/Linux_FirewallService.c:89
+#: provider/Linux_FirewallService/Linux_FirewallService.c:152
+#: provider/Linux_FirewallService/Linux_FirewallService.c:218
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:102
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:187
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:261
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService_Resource.c:82
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:105
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:194
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:291
+msgid "Creation of CMPIInstance failed"
+msgstr "Creation of CMPIInstance failed"
+
+#: provider/Linux_FirewallElementConformsToProfile/Linux_ElementConformsToProfile_Resource.c:90
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:197
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:298
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:299
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService_Resource.c:90
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:199
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:301
+msgid "Cannot set property filter"
+msgstr "Cannot set property filter"
+
+#: provider/Linux_FirewallElementConformsToProfile/Linux_ElementConformsToProfile_Resource.c:134
+#: provider/Linux_FirewallElementConformsToProfile/Linux_ElementConformsToProfile_Resource.c:140
+#: provider/Linux_FirewallElementConformsToProfile/Linux_ElementConformsToProfile_Resource.c:148
+#: provider/Linux_FirewallElementConformsToProfile/Linux_ElementConformsToProfile_Resource.c:155
+#: provider/Linux_FirewallElementConformsToProfile/Linux_ElementConformsToProfile_Resource.c:161
+#: provider/Linux_FirewallElementConformsToProfile/Linux_ElementConformsToProfile_Resource.c:169
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface_Resource.c:116
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:60
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:113
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:58
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:65
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:105
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:161
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:168
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:518
+#: provider/Linux_FirewallService/Linux_FirewallService_Resource.c:47
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService_Resource.c:117
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService_Resource.c:123
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService_Resource.c:131
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService_Resource.c:138
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService_Resource.c:144
+#: provider/Linux_FirewallServiceConfigurationForService/Linux_FirewallServiceConfigurationForService_Resource.c:152
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices_Resource.c:59
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:115
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:58
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:65
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:103
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:156
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:163
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:200
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:492
+msgid "Object Path is NULL"
+msgstr "Object Path is NULL"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:92
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:106
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:121
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:223
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:237
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:251
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:354
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:369
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:384
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:498
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:512
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:527
+msgid "Failed to get the details of Interfaces on System"
+msgstr "Failed to get the details of Interfaces on System"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:129
+msgid "Failed to get the details of trusted Interfaces"
+msgstr "Failed to get the details of trusted Interfaces"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:154
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:291
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:432
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:112
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:208
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:306
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:106
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:204
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:306
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:818
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:846
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:944
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:971
+#: provider/Linux_FirewallService/Linux_FirewallService.c:96
+#: provider/Linux_FirewallService/Linux_FirewallService.c:166
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:109
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:201
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:275
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:112
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:208
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:305
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:108
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:206
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:308
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:814
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:841
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:934
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:960
+msgid "Failed to set property values from resource data"
+msgstr "Failed to set property values from resource data"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:175
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:304
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:443
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:449
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:133
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:221
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:317
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:323
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:427
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:433
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:501
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:507
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:116
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:133
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:221
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:316
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:322
+msgid "Failed to free Config sturcture"
+msgstr "Failed to free Config sturcture"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:259
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:87
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:176
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:87
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:87
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:176
+msgid "Failed to get the details from config file"
+msgstr "Failed to get the details from config file"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:284
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:425
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:201
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:299
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:162
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:224
+#: provider/Linux_FirewallService/Linux_FirewallService.c:159
+#: provider/Linux_FirewallService/Linux_FirewallService.c:225
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:194
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:268
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:201
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:298
+msgid "Failed to set property filter"
+msgstr "Failed to set property filter"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:392
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:265
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:392
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:475
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:80
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:170
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:264
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:433
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:598
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:691
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:789
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:914
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:172
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:246
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:315
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:265
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:82
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:172
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:266
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:435
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:600
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:691
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:785
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:904
+msgid "Failed to get list of system resources"
+msgstr "Failed to get list of system resources"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:400
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:274
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:400
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:482
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:124
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:125
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:214
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:215
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:273
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:442
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:273
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:126
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:127
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:216
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:217
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:275
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:445
+msgid "Failed to get resource data"
+msgstr "Failed to get resource data"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:543
+#: provider/Linux_FirewallService/Linux_FirewallService_Resource.c:60
+msgid "Failed to fetch key element data"
+msgstr "Failed to fetch key element data"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:555
+msgid "Failed to fetch details to be modified"
+msgstr "Failed to fetch details to be modified"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:566
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:323
+msgid "Failed to modify resource data"
+msgstr "Failed to modify resource data"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:659
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:554
+#: provider/Linux_FirewallService/Linux_FirewallService.c:351
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:415
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:441
+msgid "Failed to initialize instance provider"
+msgstr "Failed to initialize instance provider"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface.c:686
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:581
+#: provider/Linux_FirewallService/Linux_FirewallService.c:378
+#: provider/Linux_FirewallServiceConfiguration/Linux_FirewallServiceConfiguration.c:442
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices.c:468
+msgid "Failed to cleanup instance provider"
+msgstr "Failed to cleanup instance provider"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface_Resource.c:54
+msgid "CBEnumInstancenames returned NULL"
+msgstr "CBEnumInstancenames returned NULL"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface_Resource.c:62
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface_Resource.c:196
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:314
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:400
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:442
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:294
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:376
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:417
+msgid "CMPIArray = NULL"
+msgstr "CMPIArray = NULL"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface_Resource.c:73
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface_Resource.c:207
+msgid "Failed to fetch value from CMPIArray"
+msgstr "Failed to fetch value from CMPIArray"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface_Resource.c:81
+msgid "Failed in fetching the key value"
+msgstr "Failed in fetching the key value"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface_Resource.c:122
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:66
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:324
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:409
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:452
+#: provider/Linux_FirewallService/Linux_FirewallService_Resource.c:53
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices_Resource.c:65
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:304
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:385
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:427
+msgid "Failed to fetch the key element data"
+msgstr "Failed to fetch the key element data"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface_Resource.c:129
+msgid "Cmpi instance Key value DeviceID is NULL"
+msgstr "Cmpi instance Key value DeviceID is NULL"
+
+#: provider/Linux_FirewallInterface/Linux_FirewallInterface_Resource.c:215
+#, fuzzy
+msgid "Failed in Fetching the key value"
+msgstr "Failed in fetching the key value"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:404
+msgid "Target instance already exists"
+msgstr "Target instance already exists"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:411
+msgid "Failed to create resource data"
+msgstr "Failed to create resource data"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:419
+msgid "Failed to build object path for the new instance"
+msgstr "Failed to build object path for the new instance"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:486
+msgid "Resource does not exist"
+msgstr "Resource does not exist"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts.c:493
+msgid "Failed to delete resource data"
+msgstr "Failed to delete resource data"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:73
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:113
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:333
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:351
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:73
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:111
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:171
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:208
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:313
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:328
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:393
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:436
+msgid "Cmpi instance name is NULL"
+msgstr "Cmpi instance name is NULL"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:111
+#, fuzzy
+msgid "instance is NULL"
+msgstr "Instance is NULL"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:117
+msgid "Failed to fetch the StartPort data"
+msgstr "Failed to fetch the StartPort data"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:125
+msgid "Failed to fetch the EndPort data"
+msgstr "Failed to fetch the EndPort data"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:133
+msgid "Failed to fetch the Protocol data"
+msgstr "Failed to fetch the Protocol data"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:212
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:189
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:290
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:191
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:292
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:477
+msgid "Instance is NULL"
+msgstr "Instance is NULL"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:227
+msgid "StartPort not specified properly or not provided"
+msgstr "StartPort not specified properly or not provided"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:236
+msgid "EndPort not specified properly or not provided"
+msgstr "EndPort not specified properly or not provided"
+
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:246
+#: provider/Linux_FirewallManagedPorts/Linux_FirewallManagedPorts_Resource.c:258
+msgid "Protocol not specified properly or not provided"
+msgstr "Protocol not specified properly or not provided"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:114
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:116
+msgid "Cannot get CMPIObjectPath for instance"
+msgstr "Cannot get CMPIObjectPath for instance"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:133
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:224
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:313
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:397
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:460
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:466
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:635
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:737
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:859
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:982
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:135
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:226
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:315
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:399
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:463
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:469
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:636
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:736
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:854
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:971
+msgid "Failed to free system resource"
+msgstr "Failed to free system resource"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:190
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:291
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:812
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:840
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:938
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:965
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:192
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:293
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:808
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:835
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:928
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:954
+msgid "Create CMPIInstance failed."
+msgstr "Create CMPIInstance failed."
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:321
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:323
+msgid "Failed to free list of system resources"
+msgstr "Failed to free list of system resources"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:381
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:383
+msgid "Failed to get one of the base objects"
+msgstr "Failed to get one of the base objects"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:389
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:391
+msgid "Failed to create resource data from instance"
+msgstr "Failed to create resource data from instance"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:452
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:455
+msgid "Failed to delete resource"
+msgstr "Failed to delete resource"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:806
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:834
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:932
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface.c:959
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:802
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:829
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:922
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:948
+#, fuzzy
+msgid "Create CMPIObjectPath failed."
+msgstr "Creation of CMPIObjectPath failed"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:74
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:460
+msgid "Failed to fetch the key value"
+msgstr "Failed to fetch the key value"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:81
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:183
+msgid "Could not get all the managed ports"
+msgstr "Could not get all the managed ports"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:98
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:200
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:96
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:193
+msgid "Could not find the ManagedPort Base object specified"
+msgstr "Could not find the ManagedPort Base object specified"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:122
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:222
+msgid "Could not get all the trusted Interfaces"
+msgstr "Could not get all the trusted Interfaces"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:137
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:237
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:133
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:230
+msgid "Could not find the Trusted Interface object specified"
+msgstr "Could not find the Trusted Interface object specified"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:176
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:502
+msgid "Instance ID is NULL"
+msgstr "Instance ID is NULL"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:207
+msgid "Interface class details not found"
+msgstr "Interface class details not found"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:215
+msgid "Interface Key valued is NULL"
+msgstr "Interface Key valued is NULL"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:417
+msgid "Keyvalue could not be derived"
+msgstr "Keyvalue could not be derived"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:525
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:499
+msgid "InstanceID not specified properly or not provided"
+msgstr "InstanceID not specified properly or not provided"
+
+#: provider/Linux_FirewallManagedPortsForInterface/Linux_FirewallManagedPortsForInterface_Resource.c:535
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:508
+msgid "DeviceID not specified properly or not provided"
+msgstr "DeviceID not specified properly or not provided"
+
+#: provider/Linux_FirewallRegisteredProfile/Linux_FirewallRegisteredProfile.c:203
+msgid "Target Instance Not Found"
+msgstr "Target Instance Not Found"
+
+#: provider/Linux_FirewallService/Linux_FirewallService.c:204
+msgid "Object Path Verification Failed"
+msgstr "Object Path Verification Failed"
+
+#: provider/Linux_FirewallService/Linux_FirewallService.c:232
+#, fuzzy
+msgid "Failed to set property values of the Instance"
+msgstr "Failed to set property values from resource data"
+
+#: provider/Linux_FirewallService/Linux_FirewallService.c:412
+#, fuzzy
+msgid "Failed to get resource data."
+msgstr "Failed to get resource data"
+
+#: provider/Linux_FirewallService/Linux_FirewallService.c:418
+msgid "The submitted reference contains an invalid class."
+msgstr "The submitted reference contains an invalid class."
+
+#: provider/Linux_FirewallService/Linux_FirewallService.c:427
+msgid "Incorrect number of input arguments for method \"StartService\"."
+msgstr "Incorrect number of input arguments for method \"StartService\"."
+
+#: provider/Linux_FirewallService/Linux_FirewallService.c:434
+msgid "Execution of method \"StartService\" failed."
+msgstr "Execution of method \"StartService\" failed."
+
+#: provider/Linux_FirewallService/Linux_FirewallService.c:443
+msgid "Incorrect number of input arguments for method \"SopService\"."
+msgstr "Incorrect number of input arguments for method \"SopService\"."
+
+#: provider/Linux_FirewallService/Linux_FirewallService.c:450
+msgid "Execution of method \"StopService\" failed."
+msgstr "Execution of method \"StopService\" failed."
+
+#: provider/Linux_FirewallService/Linux_FirewallService.c:456
+msgid "This function is not known by this provider."
+msgstr "This function is not known by this provider."
+
+#: provider/Linux_FirewallService/Linux_FirewallService.c:482
+msgid "Failed to initialize method provider"
+msgstr "Failed to initialize method provider"
+
+#: provider/Linux_FirewallService/Linux_FirewallService.c:508
+msgid "Failed to cleanup method provider"
+msgstr "Failed to cleanup method provider"
+
+#: provider/Linux_FirewallTrustedServices/Linux_FirewallTrustedServices_Resource.c:72
+msgid "Failed to fetch Key element data"
+msgstr "Failed to fetch Key element data"
+
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface.c:300
+#, fuzzy
+msgid "cannot set property filter"
+msgstr "Cannot set property filter"
+
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:80
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:178
+msgid "could not get all the managed ports"
+msgstr "could not get all the managed ports"
+
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:118
+#: provider/Linux_FirewallTrustedServicesForInterface/Linux_FirewallTrustedServicesForInterface_Resource.c:215
+msgid "could not get all the trusted Interfaces"
+msgstr "could not get all the trusted Interfaces"

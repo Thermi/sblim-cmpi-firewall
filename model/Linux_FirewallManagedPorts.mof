@@ -1,0 +1,32 @@
+//
+// Linux_FirewallManagedPorts.mof
+//
+// © Copyright IBM Corp. 2008
+//
+// THIS FILE IS PROVIDED UNDER THE TERMS OF THE ECLIPSE PUBLIC LICENSE
+// ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THIS FILE
+// CONSTITUTES RECIPIENTS ACCEPTANCE OF THE AGREEMENT.
+// 
+// You can obtain a current copy of the Eclipse Public License from
+// http://www.opensource.org/licenses/eclipse-1.0.php
+// 
+// Author:  Ashoka Rao S <ashoka.rao@in.ibm.com>
+// 
+// 
+
+
+[Description("This class defines the ports that are chosen to be Managed by the client of WBEM-SMTFIREWALL task")
+]
+
+class Linux_FirewallManagedPorts : CIM_SettingData { 
+
+	[Description("Name of the Protocol the said port supports")]
+	string Protocol;
+ 
+	[Description("The starting Port-in case a range of ports are defined, in case of individual port-the port number")]
+	string StartPort; 
+
+	[Description("The End Port number-in case a range of ports are defined, else NULL")]
+	string EndPort; 
+
+	}; 

@@ -1,0 +1,27 @@
+********************************************************************************
+class : Linux_FirewallRegisteredProfile
+objectPath : Linux_FirewallRegisteredProfile.InstanceID="IBM:Firewall Server Profile-0.1.1"
+modifyInst : InstanceID="IBM-1:Firewall Server Profile-0.1.1"
+createInst : InstanceID=""
+classKey : InstanceID
+
+--------------------------------------------------------------------------------
+Instance                                                       enumInstanceNames
+
+--------------------------------------------------------------------------------
+Instance                                                           enumInstances
+
+--------------------------------------------------------------------------------
+Instance                                                                     get
+
+--------------------------------------------------------------------------------
+Instance                                                                  create
+Expected Exception : NOT_SUPPORTED
+
+--------------------------------------------------------------------------------
+Instance                                                                     set
+Expected Exception : NOT_SUPPORTED
+
+--------------------------------------------------------------------------------
+Instance                                                                  delete
+Expected Exception : NOT_SUPPORTED

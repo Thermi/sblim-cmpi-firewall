@@ -1,0 +1,41 @@
+********************************************************************************
+association : Linux_FirewallManagedPortsForInterface
+objectPath : Linux_FirewallManagedPortsForInterface.GroupComponent=Linux_EthernetPort.CreationClassName="Linux_EthernetPort",DeviceID="eth1",SystemCreationClassName="Linux_ComputerSystem",SystemName="rhino1",PartComponent=Linux_FirewallManagedPorts.InstanceID="250.255.0"
+createInst : GroupComponent='Linux_FirewallInterface.DeviceID="eth1"',PartComponent='Linux_FirewallManagedPorts.InstanceID="350.355.1"'
+modifyInst : GroupComponent="nothing"
+classKey : GroupComponent,PartComponent
+sourceRole : GroupComponent 
+targetRole : PartComponent
+sourceClass : Linux_FirewallInterface
+targetClass : Linux_FirewallManagedPorts
+
+--------------------------------------------------------------------------------
+Instance                                                       enumInstanceNames
+
+--------------------------------------------------------------------------------
+Instance                                                           enumInstances
+
+--------------------------------------------------------------------------------
+Instance                                                                     get
+
+--------------------------------------------------------------------------------
+Instance                                                                  create
+
+--------------------------------------------------------------------------------
+Instance                                                                     set
+Expected Exception : NOT_SUPPORTED
+
+--------------------------------------------------------------------------------
+Instance                                                                  delete
+
+--------------------------------------------------------------------------------
+Association                                                          associators
+
+--------------------------------------------------------------------------------
+Association                                                      associatorNames
+
+--------------------------------------------------------------------------------
+Association                                                           references
+
+--------------------------------------------------------------------------------
+Association                                                       referenceNames

@@ -1,0 +1,15 @@
+********************************************************************************
+class : Linux_FirewallRegisteredProfile
+
+--------------------------------------------------------------------------------
+Linux_FirewallRegisteredProfile : -eq 1
+
+--------------------------------------------------------------------------------
+
+InstanceID : -eq IBM:Firewall Server Profile-0.1.1
+RegisteredOrganization : -eq 1
+OtherRegisteredOrganization : -eq IBM
+RegisteredName : -eq Firewall Server Profile
+RegisteredVersion : -eq 0.1.1
+AdvertiseTypes : -eq 3
+

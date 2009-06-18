@@ -1,0 +1,26 @@
+*******************************************************************************************************
+class : Linux_FirewallInterface
+objectPath : Linux_FirewallInterface.CreationClassName="Linux_EthernetPort",DeviceID="eth0",SystemCreationClassName="Linux_ComputerSystem",SystemName="rhino1"
+createInst : CreationClassName="",DeviceID="",SystemCreationClassName="",SystemName=""
+modifyInst : isTrusted=FALSE 
+classKey : CreationClassName,DeviceID,SystemCreationClassName,SystemName
+
+-------------------------------------------------------------------------------------------------------
+Instance									      enumInstanceNames
+
+-------------------------------------------------------------------------------------------------------
+Instance										  enumInstances
+
+-------------------------------------------------------------------------------------------------------
+Instance                                                                 			    get
+
+-------------------------------------------------------------------------------------------------------
+Instance                                                                 			 create
+Expected Exception : NOT_SUPPORTED
+
+-------------------------------------------------------------------------------------------------------
+Instance                                                                    			    set
+
+-------------------------------------------------------------------------------------------------------
+Instance                                                                		         delete
+Expected Exception : NOT_SUPPORTED

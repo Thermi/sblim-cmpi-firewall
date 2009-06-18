@@ -1,0 +1,9 @@
+********************************************************************************
+association : Linux_FirewallManagedPortsForInterface 
+
+--------------------------------------------------------------------------------
+Linux_FirewallManagedPorts : -target Linux_FirewallInterface -gt -1
+Linux_FirewallInterface : -target Linux_FirewallManagedPorts -gt -1
+
+--------------------------------------------------------------------------------
+

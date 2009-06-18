@@ -1,0 +1,44 @@
+********************************************************************************
+association : Linux_FirewallElementConformsToProfile
+objectPath : Linux_FirewallElementConformsToProfile.ConformantStandard=Linux_FirewallRegisteredProfile.InstanceID="IBM:Firewall Server Profile-0.1.1",ManagedElement=Linux_FirewallService.CreationClassName="Linux_FirewallService",Name="rhino1",SystemCreationClassName="Linux_FirewallService",SystemName="rhino1"
+createInst : ConformantStandard=linux_firewallregisteredprofile,ManagedElement=linux_firewallservice
+modifyInst : managedelement=nothing
+classKey : ConformantStandard,ManagedElement
+sourceRole : ConformantStandard
+targetRole : ManagedElement
+sourceClass : Linux_FirewallRegisteredProfile
+targetClass : Linux_FirewallService
+
+--------------------------------------------------------------------------------
+Instance                                                       enumInstanceNames
+
+--------------------------------------------------------------------------------
+Instance                                                           enumInstances
+
+--------------------------------------------------------------------------------
+Instance                                                                     get
+
+--------------------------------------------------------------------------------
+Instance                                                                  create
+Expected Exception : NOT_SUPPORTED
+
+--------------------------------------------------------------------------------
+Instance                                                                     set
+Expected Exception : NOT_SUPPORTED
+
+--------------------------------------------------------------------------------
+Instance                                                                  delete
+Expected Exception : NOT_SUPPORTED
+
+--------------------------------------------------------------------------------
+Association                                                          associators
+
+--------------------------------------------------------------------------------
+Association                                                      associatorNames
+
+--------------------------------------------------------------------------------
+Association                                                           references
+
+--------------------------------------------------------------------------------
+Association                                                       referenceNames
+
